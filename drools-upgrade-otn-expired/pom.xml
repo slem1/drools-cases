@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fr.sle</groupId>
+    <artifactId>drools-upgrade-otn-expired</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <drools.version>7.48.0.Final-redhat-00004</drools.version>
+
+        <!-- please uncomment the following line to enable 6.5.0.Final, and comment out the previous one
+             And comment out this dependency below:
+             <dependency>
+                 <groupId>org.drools</groupId>
+                 <artifactId>drools-mvel</artifactId>
+                 <version>${drools.version}</version>
+            </dependency>
+        -->
+        <!--        <drools.version>6.5.0.Final</drools.version>-->
+
+        <!--        <drools.version>7.52.0.Final</drools.version>-->
+        <!--        <drools.version>7.48.0.Final</drools.version>-->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.28</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kie</groupId>
+            <artifactId>kie-api</artifactId>
+            <version>${drools.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-compiler</artifactId>
+            <version>${drools.version}</version>
+        </dependency>
+
+        <!-- please comment out this dependency with 6.5.0.Final -->
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-mvel</artifactId>
+            <version>${drools.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

@@ -1,0 +1,36 @@
+# Project #
+!**/conf/*
+conf/*
+dependency-reduced-pom.xml
+
+# Maven #
+target/
+DT.log
+EP.log
+
+# Eclipse #
+.project
+.classpath
+.settings
+
+# IntelliJ IDEA #
+.idea/**
+!.idea/codeStyleSettings.xml
+*.iml
+atlassian-ide-plugin.xml
+out
+.idea
+
+
+# JRebel #
+rebel-remote.xml
+
+# Test Integration
+build
+
+# Otari
+**/linkysup-otari/logs/
+**/linkysup-otari/linkysup-otari-web/output/**
+**/linkysup-otari/linkysup-otari-web/linkysup-otari-web-runner/output/**
+**/linkysup-otari/linkysup-otari-web/linkysup-otari-web-runner/linkysup-otari/logs-to-collect/**
+**/linkysup-otari/linkysup-otari-web/linkysup-otari-web-runner/linkysup-otari/logs/**
